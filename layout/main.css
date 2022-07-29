@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../asset/Montserrat-Regular.ttf");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.numberscontainer{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number{
+    width: 13%;
+    height: 60%;
+    border: 1px grey solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+
+.controls{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    width: 40%;
+    height: 100px;
+    font-family: Montserrat;
+    font-size: 2.5em;
+}
+
+#reset{
+    background-color: #ED1D24;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#generate{
+    border: 0px;
+    border-radius: 5px;
+}
