@@ -14,12 +14,11 @@ jQuery(function(){
                 randomize(children[i]);
             }, 90);
             intervals.push(randomizeTimer);
-            // console.log(intervals);
         }
 
-        setInterval(()=>{
-            if(sequence>=intervals.length){
-                clearAllIntervals();
+        var mainInterval = setInterval(()=>{
+            if(sequence == intervals.length){
+                clearInterval(mainInterval);
             }
             clearInterval(intervals[sequence]);
             sequence++;
